@@ -10,7 +10,7 @@ An invariant surrogate assisted CMA-ES under strictly increasing transformations
 
 Make sure to have `cma` installed, as well as `numpy`, `scikit-learn` and `scipy`.
 ```bash
-pip install cma numpy scipy
+pip install cma numpy scipy scikit-learn
 ```
 Clone the repository as follows:
 
