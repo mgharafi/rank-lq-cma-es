@@ -2,12 +2,26 @@
 An invariant surrogate assisted CMA-ES under strictly increasing transformations of the objective function, using a linear quadratic model as surrogate on rank values instead of fitness values. [(see paper)](#)
 
 ## Content of the repository
-1. Performance data of `rank-lq-cma-es` and an extended instance of the `rank-lq-cma-es` using as transformation the original fitness values.
-2. A python implementation of the algorithm
+
+1. Usage of the module `rank-lq-cma-es`
+2. Performance data of `rank-lq-cma-es` and an extended instance of the `rank-lq-cma-es` using as transformation the original fitness values.
 
 ## Usage
+
+Make sure to have `cma` installed, as well as `numpy` and `scipy`.
+```bash
+pip install cma numpy scipy
+```
+Clone the repository as follows:
+
+```bash
+git clone https://github.com/mgharafi/rank-lq-cma-es.git
+cd rank-lq-cma-es
+```
+
 Define the problem and the surrogate models as follows:
 For all cases use the following wrapper around the problem to count proper evaluations:
+
 ```python
 # wrapper around the problem to count proper evaluations
 fun = cma.fitness_transformations.Function(fitness)
@@ -87,3 +101,7 @@ while not es.stop():
     es.disp()  # just checking what's going on
     es.logger.add()  # add the current state to the log
 ```
+
+## COCO Performance data
+
+The performance data of `rank-lq-cma-es` and an extended instance of the `rank-lq-cma-es` using as transformation the original fitness values can be found [here](./data/pptables.html).
