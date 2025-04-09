@@ -3,12 +3,12 @@ An invariant surrogate assisted CMA-ES under strictly increasing transformations
 
 ## Content of the repository
 
-1. Usage of the module `rank-lq-cma-es`
-2. Performance data of `rank-lq-cma-es` and an extended instance of the `rank-lq-cma-es` using as transformation the original fitness values.
+1. Implementation of the module `rank-lq-cma-es`
+2. The performance data of `rank-lq-cma-es` and an extended instance of the `rank-lq-cma-es` using as transformation the original fitness values can be found [here](https://mgharafi.github.io/rank-lq-cma-es/).
 
 ## Usage
 
-Make sure to have `cma` installed, as well as `numpy` and `scipy`.
+Make sure to have `cma` installed, as well as `numpy`, `scikit-learn` and `scipy`.
 ```bash
 pip install cma numpy scipy
 ```
@@ -101,7 +101,3 @@ while not es.stop():
     es.disp()  # just checking what's going on
     es.logger.add()  # add the current state to the log
 ```
-
-## COCO Performance data
-
-The performance data of `rank-lq-cma-es` and an extended instance of the `rank-lq-cma-es` using as transformation the original fitness values can be found [here](./data/pptables.html).
