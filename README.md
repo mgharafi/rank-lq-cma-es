@@ -8,15 +8,17 @@ An invariant surrogate assisted CMA-ES under strictly increasing transformations
 
 ## Usage
 
-Make sure to have `cma` installed, as well as `numpy`, `scikit-learn` and `scipy`.
+Install the module via the following command:
 ```bash
-pip install cma numpy scipy scikit-learn
+pip install git+https://github.com/mgharafi/rank-lq-cma-es
 ```
-Clone the repository as follows:
 
-```bash
-git clone https://github.com/mgharafi/rank-lq-cma-es.git
-cd rank-lq-cma-es
+Import the necessary modules:
+
+```python
+import cma
+from ranklqcma import RankLQModel
+import numpy as np
 ```
 
 Define the problem and the surrogate models as follows:
@@ -101,3 +103,14 @@ while not es.stop():
     es.disp()  # just checking what's going on
     es.logger.add()  # add the current state to the log
 ```
+
+## Example of runs
+
+In the plots below we see a comparaison of runs of `cma-es`, `lq-cma-es`, `rank-lq-cma-es` and `extended rank-lq-cma-es` on the sphere function raised to the power 1 and 5.
+
+![sphere1](./assets/example_runs_1.png)
+![performance](./assets/example_runs.png)
+
+## Acknowledgements
+
+This module is based on the implementation of [CMA-ES](https://github.com/CMA-ES/lq-cma) by Nikolaus Hansen. It is part of research conducted with the support of the consortium in Applied Mathematics CIROQUO, gathering partners in industry and academia, in particular Storengy, for the development of advanced methods for Computer Experiments.
