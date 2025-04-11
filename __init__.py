@@ -1,1 +1,1 @@
-from rank_lq_cma import RankLQModel
+from rank_lq_cma import *
