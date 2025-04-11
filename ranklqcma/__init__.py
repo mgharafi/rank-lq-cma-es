@@ -1,1 +1,1 @@
-from rank_lq_cma import *
+from .rank_lq_cma import *
