@@ -111,6 +111,8 @@ In the plots below we see a comparaison of runs of `cma-es`, `lq-cma-es`, `rank-
 ![sphere1](./assets/example_runs_1.png)
 ![performance](./assets/example_runs.png)
 
+The code used for this data can be found [here](https://colab.research.google.com/drive/145jkYcEraW4yQtlAw1obpeV9hArmsDIl?usp=sharing).
+
 ## Acknowledgements
 
-This module is based on the implementation of [CMA-ES](https://github.com/CMA-ES/lq-cma) by Nikolaus Hansen. It is part of research conducted with the support of the consortium in Applied Mathematics CIROQUO, gathering partners in industry and academia, in particular Storengy, for the development of advanced methods for Computer Experiments.
+This module is based on the implementation of [lq-CMA-ES](https://github.com/CMA-ES/lq-cma) by Nikolaus Hansen. It is part of research conducted with the support of the consortium in Applied Mathematics CIROQUO, gathering partners in industry and academia, in particular Storengy, for the development of advanced methods for Computer Experiments.
